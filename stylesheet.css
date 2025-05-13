@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    padding: 15px;
+    padding-left: 25px;
+    background-color: #0077ff;
+}
+
+.maintitle {
+    color: #ffffff;
+    font-size: 30px;
+}
+
+.outermain {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.inputarea {
+    width: 1000px;
+    margin: auto;
+    border: #b6d8ff 10px solid;
+    display: flex;
+    justify-content: flex-end;
+    border-radius: 20px;
+    background-color: #b6d8ff;
+}
+
+.buttoninput {
+    border: none;
+    padding: 10px 15px 10px 15px;
+    font-size: 40px;
+    color: #ffffff;
+    background-color: #b6d8ff;
+    border-radius: 15px;
+    border-left: #b6d8ff 10px solid;
+}
+
+.buttoninput:hover {
+    color: #757575;
+}
+
+.textinput {
+    border: none;
+    font-size: 40px;
+    flex-grow: 1;
+    padding-left: 15px;
+    padding-right: 15px;
+    background-color: #eef6ff;
+    border-radius: 15px;
+}
+
+.textinput:focus {
+    outline: none;
+}
+
+.outputarea {
+    width: 1000px;
+    margin: auto;
+    border: #b6ffc6 10px solid;
+    display: flex;
+    justify-content: flex-end;
+    border-radius: 20px;
+    background-color: #eaffee;
+    margin-top: 100px;
+    background-color: #b6ffc6;
+}
+
+.sharezone {
+    border: none;
+    font-size: 40px;
+    flex-grow: 1;
+    padding: 15px;
+    background-color: #eaffee;
+    border-radius: 15px;
+    color: #757575;
+}
+
+.shareurl {
+    color: #757575;
+    text-decoration: none;
+}
+
+.shareurl:hover {
+    color: #000000;
+}
+
+.copy {
+    border: none;
+    padding: 10px 15px 10px 15px;
+    font-size: 40px;
+    color: #ffffff;
+    background-color: #b6ffc6;
+    border-radius: 15px;
+    border-left: #b6ffc6 10px solid;
+}
+
+.copy:hover {
+    color: #757575;
+}
+
+footer {
+    padding: 10px;
+    padding-right: 20px;
+    background-color: #757575;
+    text-align: right;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+
+.copyright {
+    color: #ffffff;
+    font-size: 25px;
+}
+
+.social1 {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.social1:hover {
+    color: #b6d8ff;
+}
+
+.social2 {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.social2:hover {
+    color: #b6ffc6;
+}
