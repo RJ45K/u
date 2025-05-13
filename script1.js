@@ -3,7 +3,7 @@ if (searchParams.has("r")) {
     if (searchParams.get("r") == "") {
         window.location.replace("https://rj45k.github.io/u/");
     } else if (searchParams.get("r") == "l"){
-        window.location.replace("https://rj45k.github.io/u/error/");
+        window.location.replace("https://rj45k.github.io/u/error.html");
     } else {
         document.title = "リダイレクト中...";
         let zerohaba1 = "​";
