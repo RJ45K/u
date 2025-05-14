@@ -43,6 +43,7 @@ header {
     background-color: #b6d8ff;
     border-radius: 15px;
     border-left: #b6d8ff 10px solid;
+    cursor: pointer;
 }
 
 .buttoninput:hover {
@@ -102,6 +103,7 @@ header {
     background-color: #b6ffc6;
     border-radius: 15px;
     border-left: #b6ffc6 10px solid;
+    cursor: pointer;
 }
 
 .copy:hover {
