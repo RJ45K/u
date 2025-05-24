@@ -3,21 +3,18 @@
     <head>
         <script src="script1.js"></script>
         <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
         <title>URL短縮サービス</title>
         <link rel="icon" href="icon.png">
         <link href="stylesheet.css" rel="stylesheet" type="text/css">
     </head>
     <body>
-        <header>
-            <div class="maintitle">URL短縮サービス</div>
-        </header>
         <div class="outermain">
-            <div>
+            <div class="main">
                 <div class="inputarea">
                     <input class="textinput" id="textinput" placeholder="https://example.com/">
                     <button class="buttoninput" onclick="cut();">短縮</button>
                 </div>
-
                 <div class="outputarea">
                     <div id="share" class="sharezone">短縮したURLがここに表示されます。</div>
                     <button id="copy" class="copy" onclick="copytext();">コピー</button>
@@ -27,6 +24,9 @@
         <footer>
             <div class="copyright">2025 © <a target='_blank' class="social1" href="https://github.com/rj45k/">RJ45K</a>/<a target='_blank' class="social2" href="https://x.com/masiyasai/">ヤサイマシマシ</a></div>
         </footer>
+        <header>
+            <div class="maintitle">URL短縮サービス</div>
+        </header>
         <script src="script2.js"></script>
     </body>
 </html>
