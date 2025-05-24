@@ -1,3 +1,5 @@
+@charset "utf-8";
+
 * {
     margin: 0;
     padding: 0;
@@ -7,6 +9,10 @@ header {
     padding: 15px;
     padding-left: 25px;
     background-color: #0077ff;
+    top: 0;
+    right: 0;
+    left: 0;
+    position: fixed;
 }
 
 .maintitle {
@@ -15,22 +21,24 @@ header {
 }
 
 .outermain {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
     position: absolute;
     top: 0;
-    right: 0;
     left: 0;
-    bottom: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+}
+
+.main {
+    width: 70%;
+    min-width: 750px;
+    margin: 0 auto;
 }
 
 .inputarea {
-    width: 1000px;
-    margin: auto;
     border: #b6d8ff 10px solid;
     display: flex;
-    justify-content: flex-end;
     border-radius: 20px;
     background-color: #b6d8ff;
 }
@@ -65,15 +73,11 @@ header {
 }
 
 .outputarea {
-    width: 1000px;
-    margin: auto;
     border: #b6ffc6 10px solid;
     display: flex;
-    justify-content: flex-end;
     border-radius: 20px;
-    background-color: #eaffee;
-    margin-top: 100px;
     background-color: #b6ffc6;
+    margin-top: 100px;
 }
 
 .sharezone {
@@ -115,7 +119,7 @@ footer {
     padding-right: 20px;
     background-color: #757575;
     text-align: right;
-    position: absolute;
+    position: fixed;
     bottom: 0;
     right: 0;
     left: 0;
@@ -142,4 +146,91 @@ footer {
 
 .social2:hover {
     color: #b6ffc6;
+}
+
+@media screen and (max-width:480px) {
+
+    .outermain {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    .main {
+        width: 90%;
+        min-width: 370px;
+        margin: 0 auto;
+    }
+
+    .inputarea {
+        border: #b6d8ff 5px solid;
+        display: flex;
+        border-radius: 10px;
+        background-color: #b6d8ff;
+    }
+
+    .buttoninput {
+        border: none;
+        padding: 5px 7.5px 5px 7.5px;
+        font-size: 20px;
+        color: #ffffff;
+        background-color: #b6d8ff;
+        border-radius: 7.5px;
+        border-left: #b6d8ff 5px solid;
+        cursor: pointer;
+    }
+
+    .textinput {
+        border: none;
+        font-size: 20px;
+        flex-grow: 1;
+        padding-left: 7.5px;
+        padding-right: 7.5px;
+        background-color: #eef6ff;
+        border-radius: 7.5px;
+    }
+
+    .outputarea {
+        border: #b6ffc6 5px solid;
+        display: flex;
+        border-radius: 10px;
+        background-color: #b6ffc6;
+        margin-top: 50px;
+    }
+
+    .sharezone {
+        border: none;
+        font-size: 20px;
+        flex-grow: 1;
+        padding: 7.5px;
+        background-color: #eaffee;
+        border-radius: 7.5px;
+        color: #757575;
+    }
+
+    .copy {
+        border: none;
+        padding: 5px 7.5px 5px 7.5px;
+        font-size: 20px;
+        color: #ffffff;
+        background-color: #b6ffc6;
+        border-radius: 7.5px;
+        border-left: #b6ffc6 10px solid;
+        cursor: pointer;
+    }
+
+    footer {
+        padding: 10px;
+        background-color: #757575;
+        text-align: center;
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        left: 0;
+    }
+
 }
